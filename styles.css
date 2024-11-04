@@ -1,17 +1,21 @@
+/* Estilo geral do corpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    color: #333; /* Texto em preto */
 }
 
+/* Estilo do cabeçalho */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #333; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 20px 0;
     text-align: center;
 }
 
+/* Estilo da navegação */
 nav ul {
     list-style: none;
     padding: 0;
@@ -23,30 +27,54 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* Texto branco */
     text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
+nav ul li a:hover {
+    background: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do conteúdo principal */
 main {
     padding: 20px;
 }
 
-section {
-    background: #fff;
+/* Estilo das abas */
+.tabcontent {
+    background: #fff; /* Fundo branco */
     margin: 20px 0;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Esconde as abas inicialmente */
 }
 
+/* Estilo da aba ativa */
+.tabcontent.active {
+    display: block; /* Exibe a aba ativa */
+}
+
+/* Estilo dos títulos */
 h1, h2 {
-    color: #333;
+    color: #333; /* Texto preto */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+/* Estilo das listas */
+ul, ol {
+    margin-left: 20px; /* Margem para listas */
 }
 
+/* Estilo do rodapé */
 footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
